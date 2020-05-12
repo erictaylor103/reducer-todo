@@ -12,7 +12,9 @@ const TodoList = ({ todos, toggleTodo }) => {
 					style={{
 						textDecoration: todo.completed ? 'line-through' : 'none',
 					}}>
-					{todo.item}
+					<p>
+                    {todo.item}
+                    </p>
 				</div>
 			))}
 		</div>

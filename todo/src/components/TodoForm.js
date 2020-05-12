@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 const TodoForm = (props) => {
-    
+
 	const [item, setItem] = useState('');
 	
-	const { addTodo, clearCompleted } = props;
-	const handleChange = (event) => setItem(event.target.value);
+    const { addTodo, clearCompleted } = props;
+    
+	const handleChange = (e) => setItem(e.target.value);
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -26,7 +27,7 @@ const TodoForm = (props) => {
 				/>
 				
 				<button>Add To-Do</button>
-				<button onClick={clearCompleted}> Clear Complete</button>
+				<button onClick={clearCompleted}>Clear Complete</button>
 			</form>
 		</div>
 	);
