@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const TodoForm = (props) => {
+    
 	const [item, setItem] = useState('');
 	
 	const { addTodo, clearCompleted } = props;
@@ -10,7 +11,8 @@ const TodoForm = (props) => {
 		e.preventDefault();
 		addTodo(item);
 		setItem('');
-	};
+    };
+    
 	return (
 		<div>
 			
@@ -30,3 +32,4 @@ const TodoForm = (props) => {
 	);
 };
 export default TodoForm;
+

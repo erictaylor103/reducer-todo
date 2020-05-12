@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-
-
 const TodoList = ({ todos, toggleTodo }) => {
 	return (
 		<div>
@@ -21,4 +18,5 @@ const TodoList = ({ todos, toggleTodo }) => {
 		</div>
 	);
 };
+
 export default TodoList;
